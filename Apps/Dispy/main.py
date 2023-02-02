@@ -4,6 +4,7 @@ import discord
 import sys
 
 TOKEN = sys.argv[1]
+VOLUME = sys.argv[2]
 
 class MyClient(discord.Client):
     async def on_ready(self):

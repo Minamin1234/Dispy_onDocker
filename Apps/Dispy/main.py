@@ -1,13 +1,9 @@
 # This example requires the 'message_content' intent.
 
 import discord
-import os
+import sys
 
-TOKEN = ""
-
-with open("/home/Apps/Dispy/token.txt", "r") as f:
-    TOKEN = f.readline()
-    pass
+TOKEN = sys.argv[1]
 
 class MyClient(discord.Client):
     async def on_ready(self):
